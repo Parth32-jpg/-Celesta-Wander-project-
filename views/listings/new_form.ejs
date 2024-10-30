@@ -1,0 +1,72 @@
+<% layout("layouts/boilerplate") %>
+<body>
+  <form action="/listing" method="post" enctype="multipart/form-data">
+    <div class="col-8 offset-2">
+      <h3>Add your new CelestiaWander :</h3>
+      <div class="form-group">
+        <label for="title" class="form-label">Title</label>
+        <input
+          type="text"
+          class="form-control border border-dark"
+          name="listing[title]"
+          placeholder="Add title.."
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="description">Description</label>
+        <textarea
+          class="form-control border border-dark"
+          name="listing[description]"
+          placeholder="write here.."
+          rows="5"
+          cols="20"
+          required
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <label for="image">Upload Image</label>
+        <input
+          type="file"
+          class="form-control border border-dark"
+          name="listing[image]"
+          required
+        />
+      </div>
+      <div class="row">
+        <div class="form-group col-md-4">
+          <label for="price">Price</label>
+          <input
+            class="form-control border border-dark"
+            name="listing[price]"
+            placeholder="Add price.."
+            required
+          />
+        </div>
+        <div class="form-group col-md-8">
+          <label for="location">Location</label>
+          <input
+            type="text"
+            class="form-control border border-dark"
+            name="listing[location]"
+            placeholder="Add location.."
+            required
+          />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="country">Country</label>
+        <input
+          type="text"
+          class="form-control border border-dark"
+          name="listing[country]"
+          placeholder="Add country.."
+          required
+        />
+      </div>
+      <button type="submit" class="btn btn-outline-success">
+        Add CelestiaWander
+      </button>
+    </div>
+  </form>
+</body>

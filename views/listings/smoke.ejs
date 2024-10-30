@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background-color: #8290ac;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .smoky-text {
+      font-size: 3em;
+      font-weight: 400;
+      color: rgb(41, 40, 40);
+      position: relative;
+    }
+    p{
+        color: black;
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+
+    .smoky-text span {
+      display: inline-block;
+      animation: smoky 4s infinite linear alternate-reverse;
+    }
+
+    @keyframes smoky {
+      0% {
+        text-shadow: 0 0 5px rgba(187, 185, 185, 0.2);
+      }
+      100% {
+        text-shadow: 0 0 60px rgba(25, 4, 4, 0.6);
+      }
+    }
+    button {
+        margin-top: 2rem;
+      padding: 15px 25px;
+      background-color: rgb(47, 115, 47);
+      border: 1px solid white;
+      border-radius: 15px;
+      color: #fff;
+      font-size: 1em;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: white;
+      color: rgb(47, 115, 47);
+      border: 1px solid rgb(47, 115, 47);
+    }
+  </style>
+  <title>CelestiaWander</title>
+</head>
+<body>
+  <div class="smoky-text">
+    <span>C</span>
+    <span>e</span>
+    <span>l</span>
+    <span>e</span>
+    <span>s</span>
+    <span>t</span>
+    <span>i</span>
+    <span>a</span>
+    <span>W</span>
+    <span>a</span>
+    <span>n</span>
+    <span>d</span>
+    <span>e</span>
+    <span>r</span>
+  </div>
+  <p>"Embark on Celestial Journeys with CelestiaWander – Where Dreams Take Flight."</p>
+  <form action="/listing">
+    <button>Explore</button>
+  </form>
+</body>
+</html>
